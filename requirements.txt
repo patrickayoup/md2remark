@@ -1,0 +1,6 @@
+pyossboilerplate==0.2.1
+pystache==0.5.4
+Sphinx==1.2.2
+nose==1.3.4
+coverage==3.7.1
+coveralls==0.4.2
