@@ -2,7 +2,10 @@ from setuptools import setup
 
 setup(
   name = 'md2remark',
-  packages = ['md2remark'],
+  py_modules = ['md2remark_runner'],
+  packages = ['md2remark', 'md2remark.resources', 'md2remark.resources.templates'],
+  package_data = {'md2remark.resources.templates': ['*.mustache']}, 
+  install_requires = ['pystache==0.5.4'],
   version = '0.1.0',
   description = 'Builds a slideshow from markdown using remark.js.',
   long_description = open('README.rst', 'r').read(),
@@ -23,7 +26,7 @@ setup(
   ],
   entry_points = {
       'console_scripts': [
-          'md2remark = md2remark:run'
+          'md2remark = md2remark_runner:run'
       ]
   },
 )
