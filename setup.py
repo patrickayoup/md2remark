@@ -23,7 +23,7 @@ setup(
   ],
   entry_points = {
       'console_scripts': [
-          'md2remark = md2remark.main:run'
+          'md2remark = md2remark:run'
       ]
   },
 )

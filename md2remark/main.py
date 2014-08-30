@@ -46,6 +46,3 @@ def run():
   '''Compiles markdown files into html files for remark.js'''
   args = parse_cl_args(sys.argv[1:])
   compile_slides(args.source)
-
-if __name__ == '__main__':
-  run()
